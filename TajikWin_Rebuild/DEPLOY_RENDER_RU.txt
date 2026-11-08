@@ -1,0 +1,18 @@
+TAJIK WIN — ПЕРВЫЙ ТЕСТ НА GITHUB + RENDER
+
+1. Распакуй ZIP. Зайди в GitHub репозиторий jexobot-casino.
+2. Загрузи ПАПКУ TajikWin_Rebuild со всеми файлами, включая webapp.
+3. Render > твой сервис > Settings > Root Directory: TajikWin_Rebuild
+4. Build Command: pip install -r requirements.txt
+5. Start Command: python app.py
+6. Environment Variables: BOT_TOKEN, ADMIN_ID, WEBAPP_URL
+   WEBAPP_URL = https://jexobot-casino.onrender.com (если этот URL всё ещё твой)
+   НЕЛЬЗЯ добавлять LOCAL_TEST=1 на Render.
+7. Сохрани, затем Manual Deploy > Deploy latest commit.
+8. Убедись, что Render пишет Live. Открой Telegram бота и отправь /start.
+9. Проверь: у нового аккаунта 0 сум; заявка на начисление;
+   команда /approve ID у админа; затем ставки и звуки.
+
+ВАЖНО: Render Free выключает приложение при отсутствии активности,
+а SQLite на временном диске может потерять баланс при новом деплое.
+Для постоянной эксплуатации нужны PostgreSQL и всегда активный сервер.
