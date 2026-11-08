@@ -1,4 +1,0 @@
-aiogram>=3.0
-fastapi
-uvicorn[standard]
-pydantic
